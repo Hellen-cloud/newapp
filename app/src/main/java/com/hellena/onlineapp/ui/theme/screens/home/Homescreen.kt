@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.hellena.onlineapp.R
+import com.hellena.onlineapp.navigation.ROUTE_MYAPP
 import com.hellena.onlineapp.navigation.ROUTE_REGISTER
 import com.hellena.onlineapp.navigation.ROUTE_lOGIN
 
@@ -71,7 +72,7 @@ fun Home_screen(navController: NavHostController) {
             )
         }
         Spacer(modifier = Modifier.height(30.dp))
-        Button(onClick ={},
+        Button(onClick ={navController.navigate(ROUTE_MYAPP)},
             colors = ButtonDefaults.buttonColors(Color.Black),
             modifier = Modifier.width(300.dp)) {
 
